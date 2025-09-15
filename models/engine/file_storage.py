@@ -6,6 +6,12 @@ Serializes instances to a JSON file & deserializes back
 
 import json
 from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
 
 
 class FileStorage:
@@ -33,9 +39,21 @@ class FileStorage:
         try:
             with open(self.__file_path, "r") as f:
                 data = json.load(f)
-                for obj in data.values():
-                    cls_name = obj["__class__"]
+                for obj_data in data.values():
+                    cls_name = obj_data["__class__"]
                     if cls_name == "BaseModel":
-                        self.new(BaseModel(**obj))
+                        self.new(BaseModel(**obj_data))
+                    elif cls_name == "User":
+                        self.new(User(**obj_data))
+                    elif cls_name == "State":
+                        self.new(State(**obj_data))
+                    elif cls_name == "City":
+                        self.new(City(**obj_data))
+                    elif cls_name == "Amenity":
+                        self.new(Amenity(**obj_data))
+                    elif cls_name == "Place":
+                        self.new(Place(**obj_data))
+                    elif cls_name == "Review":
+                        self.new(Review(**obj_data))
         except FileNotFoundError:
             pass
