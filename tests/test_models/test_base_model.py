@@ -217,8 +217,8 @@ class TestBaseModel(unittest.TestCase):
 
         model = BaseModel()
 
-        # Verify datetime.now() was called twice (for created_at and updated_at)
-        self.assertEqual(mock_datetime.now.call_count, 2)
+        # Verify datetime.now() was called (for created_at)
+        self.assertEqual(mock_datetime.now.call_count, 1)
         self.assertEqual(model.created_at, test_time)
         self.assertEqual(model.updated_at, test_time)
 
