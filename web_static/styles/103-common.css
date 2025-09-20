@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333; /* contrast */
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-width: 320px;
+    line-height: 1.5; /* an improved readability */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: 2px solid #007BFF; /* focus indicator for keyboard navigation */
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007BFF;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}

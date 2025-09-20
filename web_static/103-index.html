@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AirBnB clone - Find places to stay around the world">
+    <title>AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo" aria-label="AirBnB logo"></div>
+        <h1>HBN</h1>
+        <button class="mobile-menu" aria-label="Toggle navigation menu">☰</button>
+    </header>
+    
+    <main class="container" role="main">
+        <section class="filters" aria-label="Search filters">
+            <div class="locations" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">
+                <h2>States</h2>
+                <p>Kicukiro, Muhanga ...</p>
+                <ul class="popover" role="menu">
+                    <li>
+                        <h3>Kicukiro</h3>
+                        <ul>
+                            <li role="menuitem">Gatenga</li>
+                            <li role="menuitem">Niboye</li>
+                            <li role="menuitem">Kagarama</li>
+                            <li role="menuitem">Gahanga</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Muhanga</h3>
+                        <ul>
+                            <li role="menuitem">Nyamabuye</li>
+                            <li role="menuitem">Nyarusange</li>
+                            <li role="menuitem">Ruhina</li>
+                            <li role="menuitem">Nyarusange</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="amenities" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">
+                <h2>Amenities</h2>
+                <p>Kitchen, Trash...</p>
+                <ul class="popover" role="menu">
+                    <li role="menuitem">Internet</li>
+                    <li role="menuitem">Iron</li>
+                    <li role="menuitem">Trash</li>
+                    <li role="menuitem">TV</li>
+                    <li role="menuitem">Radio</li>
+                    <li role="menuitem">Oven</li>
+                </ul>
+            </div>
+            <button type="button" aria-label="Search for places">Search</button>
+        </section>
+        
+        <section class="places" aria-label="List of available places">
+            <h2>Places</h2>
+            <div class="places-container">
+                <article aria-label="My home listing">
+                    <div class="price_by_night" aria-label="Price per night: 80 dollars">$80</div>
+                    <h3>My home</h3>
+                    <div class="information">
+                        <div class="max_guest">
+                            <div class="icon_guest" aria-hidden="true">👥</div>
+                            <p>2 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <div class="icon_bed" aria-hidden="true">🛌</div>
+                            <p>1 Bedroom</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <div class="icon_bath" aria-hidden="true">🛁</div>
+                            <p>1 Bathroom</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner:</strong> John Doe</p>
+                    </div>
+                    <div class="description">
+                        <p>This is a lovely 1 bedroom and 1 bathroom apartment that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.</p>
+                    </div>
+                    
+                    <div class="amenitie">
+                        <h4>Amenities</h4>
+                        <ul>
+                            <li><span class="emoji" aria-hidden="true">📺</span>TV</li>
+                            <li><span class="emoji" aria-hidden="true">📡</span>WiFi</li>
+                            <li><span class="emoji" aria-hidden="true">🐶</span>Pet friendly</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>
+                                <h5>From Bob Dylan the 27th January 2017</h5>
+                                <p>John is an epic host. Nothing more I can say. 5 star!</p>
+                            </li>
+                            <li>
+                                <h5>From Connor the 4th January 2017</h5>
+                                <p>Highly recommended!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article aria-label="Tiny house listing">
+                    <div class="price_by_night" aria-label="Price per night: 65 dollars">$65</div>
+                    <h3>Tiny house</h3>
+                    <div class="information">
+                        <div class="max_guest">
+                            <div class="icon_guest" aria-hidden="true">👥</div>
+                            <p>4 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <div class="icon_bed" aria-hidden="true">🛌</div>
+                            <p>2 Bedrooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <div class="icon_bath" aria-hidden="true">🛁</div>
+                            <p>1 Bathroom</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner:</strong> Rutwe</p>
+                    </div>
+                    <div class="description">
+                        <p>Our place is a private, affordable stand-alone guest house centrally located just minutes to French Quarters, downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 square ft. with a full bath, mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. We have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.</p>
+                    </div>
+                    
+                    <div class="amenitie">
+                        <h4>Amenities</h4>
+                        <ul>
+                            <li><span class="emoji" aria-hidden="true">📺</span>TV</li>
+                            <li><span class="emoji" aria-hidden="true">📡</span>WiFi</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>
+                                <h5>From Max the 15th February 2017</h5>
+                                <p>Fantastic place. It was clean, Adrienne was great (even though we didn't meet in person) and everything went super smooth. Location is also great if you like running and something a bit more quiet.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article aria-label="A suite listing">
+                    <div class="price_by_night" aria-label="Price per night: 190 dollars">$190</div>
+                    <h3>A suite</h3>
+                    <div class="information">
+                        <div class="max_guest">
+                            <div class="icon_guest" aria-hidden="true">👥</div>
+                            <p>6 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <div class="icon_bed" aria-hidden="true">🛌</div>
+                            <p>3 Bedrooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <div class="icon_bath" aria-hidden="true">🛁</div>
+                            <p>2 Bathrooms</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner:</strong> Vakev</p>
+                    </div>
+                    <div class="description">
+                        <p>Newly renovated spacious 3 bedrooms 2 baths in cozy Gastown style unit with the views of North Shore mountains. Woodward's landmark building situated at the historic heart of Vancouver.</p>
+                    </div>
+                    
+                    <div class="amenitie">
+                        <h4>Amenities</h4>
+                        <ul>
+                            <li><span class="emoji" aria-hidden="true">📺</span>TV</li>
+                            <li><span class="emoji" aria-hidden="true">📡</span>WiFi</li>
+                            <li><span class="emoji" aria-hidden="true">🐶</span>Pet friendly</li>
+                            <li><span class="emoji" aria-hidden="true">🏊‍♂️</span>Swimming pool</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reviews">
+                        <h4>Reviews</h4>
+                        <ul>
+                            <li>
+                                <h5>From Juan the 20th March 2017</h5>
+                                <p>Excellent stay. Would definitely come back!</p>
+                            </li>
+                            <li>
+                                <h5>From Laura the 5th February 2017</h5>
+                                <p>Beautiful apartment with amazing views. Bill was very responsive and helpful.</p>
+                            </li>
+                            <li>
+                                <h5>From Mark the 10th January 2017</h5>
+                                <p>Great location, clean, and comfortable. Highly recommend!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>Best School</p>
+    </footer>
+</body>
+</html>
