@@ -1,0 +1,147 @@
+.places {
+    margin-top: 30px;
+}
+
+.places h1 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.places article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.places article h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.price_by_night {
+    color: #FF5A5F;
+    border: 4px solid #FF5A5F;
+    border-radius: 50%;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+    width: 100px;
+    text-align: center;
+}
+
+.max_guest p,
+.number_rooms p,
+.number_bathrooms p {
+    margin: 0;
+}
+
+.icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user {
+    margin: 10px 0;
+}
+
+.user p {
+    margin: 0;
+}
+
+.user strong {
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+/* Amenities styles */
+.amenitie {
+    margin-top: 40px;
+}
+
+.amenitie h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+}
+
+.amenitie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.amenitie li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.emoji {
+    font-size: 20px;
+    margin-right: 10px;
+    width: 24px;
+    text-align: center;
+}
+
+/* Reviews styles */
+.reviews {
+    margin-top: 40px;
+}
+
+.reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+}
+
+.reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reviews li {
+    margin: 20px 0;
+}
+
+.reviews h3 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.reviews p {
+    font-size: 12px;
+    margin: 0;
+}
