@@ -1,0 +1,58 @@
+header {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 142px;
+    height: 60px;
+    background: url("../images/icon.png") no-repeat center;
+    margin-left: 20px;
+}
+
+header h1 {
+    color: #484848;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        margin-left: 0;
+        width: 120px;
+        background-size: contain;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobile-menu {
+        display: block;
+    }
+    
+    header h1 {
+        font-size: 18px;
+    }
+}
